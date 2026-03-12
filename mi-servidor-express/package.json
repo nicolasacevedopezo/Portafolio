@@ -1,0 +1,15 @@
+{
+  "name": "mi-servidor-express",
+  "version": "1.0.0",
+  "description": "Ejercicio Estructura Profesional Node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

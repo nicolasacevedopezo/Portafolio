@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    { "id": 1, "title": "Configurar el proyecto", "status": "To Do" },
+    { "id": 2, "title": "Diseñar Layout", "status": "In Progress" }
+  ]
+}

@@ -1,0 +1,10 @@
+<h1>Mi Tablero Kanban</h1>
+<ul>
+  {{#each tasks}}
+    <li>{{this.title}} - <strong>{{this.status}}</strong></li>
+  {{/each}}
+</ul>
+<form action="/nueva-tarjeta" method="POST">
+    <input type="text" name="title" placeholder="Nombre de la tarea" required>
+    <button type="submit">Añadir Tarea</button>
+</form>
