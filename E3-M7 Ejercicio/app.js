@@ -1,5 +1,4 @@
 const { Pool } = require('pg');
-
 const pool = new Pool({
     user: 'tu_usuario',
     host: 'localhost',
@@ -7,7 +6,6 @@ const pool = new Pool({
     password: 'tu_password',
     port: 5432,
 });
-
 async function insertarTarea(titulo, descripcion) {
     const consulta = 'INSERT INTO tareas (titulo, descripcion) VALUES ($1, $2)';
     const valores = [titulo, descripcion];
@@ -19,7 +17,6 @@ async function insertarTarea(titulo, descripcion) {
         console.error('Error al insertar tarea:', error.message);
     }
 }
-
 async function actualizarTarea(id, nuevoTitulo, nuevaDescripcion) {
     const consulta = 'UPDATE tareas SET titulo = $1, descripcion = $2 WHERE id = $3';
     const valores = [nuevoTitulo, nuevaDescripcion, id];
@@ -60,5 +57,4 @@ async function main() {
     await pool.end();
     console.log('--- Pruebas finalizadas ---');
 }
-
 main();
